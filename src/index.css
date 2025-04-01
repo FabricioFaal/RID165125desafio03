@@ -1,0 +1,51 @@
+.about {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.about h1 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.about h2 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.about p {
+  font-weight: 300;
+  font-size: 2px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-links a {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-links a:hover {
+  color: #222222;
+}
+
+.nav {
+  text-decoration: none;
+  
+}
