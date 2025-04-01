@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/About.css";
+import "../styles/about.css";
 import Icone1 from "../assets/icone1.svg";
 import Icone2 from "../assets/icone2.svg";
 import Icone3 from "../assets/icone3.svg";
