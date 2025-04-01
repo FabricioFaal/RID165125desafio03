@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/projects.css"; // Certifique-se de criar o arquivo de estilo
-import ArquiteturaImage from "../assets/arquitetura.jpeg";
+import ArquiteturaImage from "../assets/Arquitetura.jpeg";
 import DNCWeatherImage from "../assets/DNCWeather.jpeg";
 import SiteConstrução from "../assets/site_em_construcao.jpg";
 
