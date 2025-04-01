@@ -11,3 +11,7 @@ O design foi seguido fielmente para garantir uma experiência consistente e prof
 - React Hooks (useState, useEffect)  
 - Styled Components / CSS Modules  
 - Responsividade com Flexbox e Grid
+
+## Links
+    "github": "https://github.com/FabricioFaal/RID165125desafio03",
+    "link": "https://rid165125desafio03.netlify.app/"
