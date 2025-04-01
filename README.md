@@ -13,5 +13,5 @@ O design foi seguido fielmente para garantir uma experiência consistente e prof
 - Responsividade com Flexbox e Grid
 
 ## Links
-    "github": "https://github.com/FabricioFaal/RID165125desafio03",
-    "link": "https://rid165125desafio03.netlify.app/"
+    github: https://github.com/FabricioFaal/RID165125desafio03
+    link: https://rid165125desafio03.netlify.app/
