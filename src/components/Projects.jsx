@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import "../styles/projects.css";
-import { ThemeContext } from "../ThemeContext"; 
+import { ThemeContext } from "../context/ThemeContext.jsx";
 import ArquiteturaImage from "../assets/Arquitetura.jpeg";
 import DNCWeatherImage from "../assets/DNCWeather.jpeg";
 import SiteConstrução from "../assets/site_em_construcao.jpg";
