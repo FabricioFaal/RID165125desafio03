@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/about.css";
+import "../styles/darkmode.css"; // Importando o Dark Mode
 import Icone1 from "../assets/icone1.svg";
 import Icone2 from "../assets/icone2.svg";
 import Icone3 from "../assets/icone3.svg";
@@ -51,7 +52,6 @@ const listsData = [
 ];
 
 function About() {
-  
   return (
     <div className="about-container">
       <h1>Sobre Mim</h1>
@@ -75,38 +75,34 @@ function About() {
           </div>
         </div>
 
-
         <div className="about-icons">
-  {iconsData.map((item, index) => (
-    <div key={index} className="icon-block">
-      <img src={item.icon} alt={`Ícone ${index + 1}`} className="icon-img" />
-      <div className="separator-vertical"></div>
-      <div className="icon-text">
-        <h3>{item.title}</h3>
-        <p>{item.subtitle}</p>
-      </div>
-    </div>
-  ))}
-</div>
-
-
+          {iconsData.map((item, index) => (
+            <div key={index} className="icon-block">
+              <img src={item.icon} alt={`Ícone ${index + 1}`} className="icon-img" />
+              <div className="separator-vertical"></div>
+              <div className="icon-text">
+                <h3>{item.title}</h3>
+                <p>{item.subtitle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
 
         <div className="about-lists">
-  {listsData.map((list, index) => (
-    <div key={index} className="list-block">
-      <div className="separator-vertical1"></div> 
-      <div className="list-content">
-        <h3>{list.title}</h3>
-        <ul>
-          {list.items.map((item, i) => (
-            <li key={i}>{item}</li>
+          {listsData.map((list, index) => (
+            <div key={index} className="list-block">
+              <div className="separator-vertical1"></div>
+              <div className="list-content">
+                <h3>{list.title}</h3>
+                <ul>
+                  {list.items.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </div>
           ))}
-        </ul>
-      </div>
-    </div>
-  ))}
-</div>
-
+        </div>
 
       </div>
     </div>

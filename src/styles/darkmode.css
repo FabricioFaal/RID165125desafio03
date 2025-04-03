@@ -1,0 +1,113 @@
+/* Botão flutuante */
+.dark-mode-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    color: #fff;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background-color: #121212;
+    color: white;
+  }
+  
+  /* Menu lateral */
+  body.dark .sidebar a,
+  body.dark .header a {
+    color: white;
+  }
+  
+  /* Cabeçalho */
+  body.dark .header {
+    background-color: #1a1a1a;
+  }
+  
+  /* Botões */
+  body.dark .button {
+    background-color: #333;
+    color: white;
+  }
+  
+  /* Logo */
+  body.dark img.logo-svg {
+    filter: brightness(0) invert(1);
+  }
+  
+  /* Título */
+  body.dark .header-title h1 {
+    color: white;
+  }
+  
+  /* Barra abaixo do título dos projetos */
+  body.dark .projects-title::after {
+    background-color: white;
+  }
+  
+  /* Background do projeto no Dark Mode */
+  body.dark .project-visual {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Texto do projeto mais branco */
+  body.dark .project-info p {
+    color: #ddd;
+  }
+  
+  /* Barra abaixo do título de Contato */
+  body.dark .contact h2::after {
+    background-color: white;
+  }
+  
+  /* Ícones invertidos no Dark Mode */
+  body.dark .icon {
+    filter: brightness(0) invert(1);
+  }
+  
+
+  /* Título e Barra */
+body.dark .about-container h1 {
+    color: white;
+}
+
+body.dark .about-container h1::after {
+    background-color: white;
+}
+
+/* Links */
+body.dark .social-links a {
+    color: white;
+}
+
+body.dark .social-links a:hover {
+    color: #ccc;
+}
+
+/* Fundo dos Blocos */
+body.dark .icon-block,
+body.dark .list-block {
+    background-color: #1e1e1e;
+    color: white;
+    box-shadow: 0px 0px 3px 0px rgba(255, 255, 255, 0.2);
+}
+
+/* Texto dentro dos Blocos */
+body.dark .icon-text h3,
+body.dark .icon-text p,
+body.dark .list-content h3,
+body.dark .list-content ul li {
+    color: white;
+}
+
+/* Ícones */
+body.dark .icon-img {
+    filter: brightness(0) invert(1);
+}

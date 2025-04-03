@@ -3,7 +3,6 @@ import "../styles/contact.css";
 import { FaInstagram, FaLinkedin, FaGithub } from "react-icons/fa";
 
 function Contact() {
-  
   return (
     <section className="contact">
       <h2>Contato</h2>

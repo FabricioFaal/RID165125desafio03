@@ -3,6 +3,7 @@
   text-align: left;
 }
 
+/* Estilização do título */
 .projects-title {
   text-align: right;
   font-size: 30px;
@@ -17,6 +18,7 @@
   background-color: black;
   margin-top: 5px;
   margin-left: auto;
+  transition: background-color 0.3s ease;
 }
 
 .projects-grid {
@@ -26,22 +28,26 @@
   margin-top: 30px;
 }
 
+/* Cartões de projetos */
 .project-card {
   display: flex;
   align-items: center;
   padding: 20px;
 }
 
+/* Área da imagem e tags */
 .project-visual {
-  background: #00000009;
+  background: rgba(0, 0, 0, 0.05); /* Ajustado para um cinza mais visível */
   padding: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 200px;
   margin-right: 20px;
+  transition: background 0.3s ease;
 }
 
+/* Miniatura do projeto */
 .project-thumbnail {
   width: 193px;
   height: 100px;
@@ -49,6 +55,7 @@
   border-radius: 8px;
 }
 
+/* Tags */
 .tags-container {
   display: flex;
   flex-wrap: wrap;
@@ -58,7 +65,7 @@
 
 .tag {
   background: #FFFFFF;
-  color: rgb(0, 0, 0);
+  color: black;
   font-weight: bold;
   padding: 5px 10px;
   font-size: 10px;
@@ -66,6 +73,7 @@
   margin: 5px;
 }
 
+/* Informações do projeto */
 .project-info {
   flex: 1;
 }
@@ -79,4 +87,18 @@
   font-size: 13px;
   color: #555;
   margin: 10px 0;
+  transition: color 0.3s ease;
+}
+
+/* DARK MODE */
+body.dark .projects-title::after {
+  background-color: white;
+}
+
+body.dark .project-visual {
+  background: rgba(255, 255, 255, 0.1); /* Cinza mais aparente no Dark Mode */
+}
+
+body.dark .project-info p {
+  color: #ddd; /* Texto mais claro */
 }

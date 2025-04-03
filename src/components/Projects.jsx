@@ -1,11 +1,13 @@
-import React from "react";
-import "../styles/projects.css"; // Certifique-se de criar o arquivo de estilo
+import React, { useContext } from "react";
+import "../styles/projects.css";
+import { ThemeContext } from "../ThemeContext"; 
 import ArquiteturaImage from "../assets/Arquitetura.jpeg";
 import DNCWeatherImage from "../assets/DNCWeather.jpeg";
 import SiteConstrução from "../assets/site_em_construcao.jpg";
 
 function Projects() {
-  
+  const { darkMode } = useContext(ThemeContext);
+
   const projects = [
     {
       id: 1,
@@ -25,7 +27,7 @@ function Projects() {
     },
     {
       id: 3,
-      title: "Projeto em contrução",
+      title: "Projeto em construção",
       description: "Descrição do projeto em construção",
       imageUrl: SiteConstrução,
       tags: ["Java", "CSS", "HTML"]
@@ -40,16 +42,21 @@ function Projects() {
   ];
 
   return (
-    <div className="projects-container">
+    <div className={`projects-container ${darkMode ? "dark" : ""}`}>
       <h2 className="projects-title">Projetos</h2>
       <div className="projects-grid">
         {projects.map((project) => (
           <div key={project.id} className="project-card">
             
             <div className="project-visual">
-            <a href={project.link} target="_blank" rel="noopener noreferrer">
+              {project.link ? (
+                <a href={project.link} target="_blank" rel="noopener noreferrer">
+                  <img src={project.imageUrl} alt={project.title} className="project-thumbnail" />
+                </a>
+              ) : (
                 <img src={project.imageUrl} alt={project.title} className="project-thumbnail" />
-              </a>
+              )}
+              
               <div className="tags-container">
                 {project.tags.map((tag, index) => (
                   <span key={index} className="tag">{tag}</span>

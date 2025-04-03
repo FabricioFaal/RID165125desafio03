@@ -4,9 +4,15 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
+import DarkModeButton from "./components/DarkModeButton";
+import { ThemeProvider } from "./context/ThemeContext";
+import "./styles/global.css";
 
 function App() {
   return (
+  <ThemeProvider>
+    <div>
+    <DarkModeButton />
     <Router>
       <Header />
       <main style={{ marginLeft: '80px', paddingTop: '20px' }}>
@@ -19,6 +25,9 @@ function App() {
         </Routes>
       </main>
     </Router>
+    </div>
+    </ThemeProvider>
+
  );
 }
 
